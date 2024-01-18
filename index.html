@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevConverter</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>$DevConverter</h1>
+    </header>
+
+    <main>
+        <form id="form">
+            <section class="inputs-container">
+                <div class="form-group">
+                    <label for="value-euro">Value to convert (€)</label>
+                    <input 
+                        type="number"
+                        placeholder="€20.00"
+                        id="value-euro"
+                        name="value-euro"
+                        max="10000000"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="currency">Choose your currency</label>
+                    <select id="currency">
+                        <option value="">Select</option>
+                        <option value="real">Real</option>
+                        <option value="dol">Dolar</option>
+                    </select>
+                </div>
+            </section>
+
+            <button type="submit">Convert</button>
+        </form>
+
+        <h2 id="result"></h2>
+    </main>
+
+    <footer>
+        <span>
+            &copy; DevConverter, 2024. All rights reserved.
+        </span>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
